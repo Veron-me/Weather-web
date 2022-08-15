@@ -1,0 +1,55 @@
+body {
+  color: #5a6275;
+  font-size: 14px;
+}
+h1 {
+  font-size: 124px;
+  text-align: right;
+}
+
+h2 {
+  text-align: end;
+  padding-left: 15px;
+}
+h3 {
+  font-size: 12px;
+}
+img {
+  display: block;
+  text-align: left;
+}
+button {
+  border: none;
+  background-color: #ffffff;
+  color: #007bff;
+  transition: all 200ms ease;
+}
+button:hover {
+  cursor: pointer;
+  color: #0056b3;
+  text-decoration: underline;
+}
+.container {
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.city-weather .col-1,
+.col-3 {
+  padding: 0px;
+}
+
+.weather-5-days .col-3 {
+  padding: 0;
+  height: 32.5px;
+}
+.celected-city .col-7 {
+  padding: 8px 0 0 0;
+}
+.celsius,
+.slash,
+.fahrenheit {
+  display: inline;
+  font-size: 20px;
+  vertical-align: -35px;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <form class="search-city col-8" id="search-data">
+        <div class="input-group mb-2">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Type your city"
+            aria-label="Your city"
+            aria-describedby="button-addon2"
+            id="city-input"
+          />
+        
+          <div class="input-group-append">
+            <input
+              class="btn btn-outline-secondary"
+              type="submit"
+              id="button-addon2"
+              value="Search"
+            />
+          </div>
+        </div>
+      </form>
+    
+    
+      <div class="city-weather row">
+        <div class="col-3">
+          <h1>
+            32
+          </h1>
+          
+          </div>
+          <div class="col-1">
+          <a href="h1" class="celsius">°C</a><div class = "slash">|</div><a href="h1" class="fahrenheit">°F</a>
+          </div>
+          <div class="col-4">
+          <img src="src/img/sun.png" alt="sunny" width="150px" />
+        </div>
+     
+      
+        <div class="col-4">
+            
+          <div class="weather-5-days row">
+            <div class="col-3">Monday</div>
+            <div class="col-2">
+              <img src="src/img/sun.png" alt="sunny" width="30px" />
+            </div>
+            <div class="col-2">30°</div> 
+            
+            <div class="col-5">Sunny</div>
+          </div>
+            <div class="weather-5-days row">
+              <div class="col-3">Tuesday</div>
+              <div class="col-2">
+                <img
+                  src="src/img/partly_cloudy.png"
+                  alt="party-cloudy"
+                  width="30px"
+                />
+              </div>
+              <div class="col-2">28°</div>
+              <div class="col-5">Partly cloudy</div>
+            </div>
+            <div class="weather-5-days row">
+                <div class="col-3">Wednesday</div>
+                <div class="col-2">
+                  <img
+                    src="src/img/cloudy_windy.png"
+                    alt="cloudy-windy"
+                    width="30px"
+                  />
+                </div>
+                <div class="col-2">27°</div>
+                <div class="col-5">Cloudy</div>
+              </div>
+              <div class="weather-5-days row">
+                  <div class="col-3">Thursday</div>
+                  <div class="col-2">
+                    <img
+                      src="src/img/rain.png"
+                      alt="rainy"
+                      width="30px"
+                    />
+                  </div>
+                  <div class="col-2">23°</div>
+                  <div class="col-5">Rainy</div>
+                </div>
+                <div class="weather-5-days row">
+                    <div class="col-3">Friday</div>
+                    <div class="col-2">
+                      <img
+                        src="src/img/storm.png"
+                        alt="storm"
+                        width="30px"
+                      />
+                    </div>
+                    <div class="col-2">18°</div>
+                    <div class="col-5">Heavy rainy</div>
+                  </div>
+          </div>
+        </form>
+        </div>
+      
+        <div class="celected-city row">
+            <div class="col-1">
+                <button>
+                 📍Your location
+                </button>
+             </div>
+          <div class="col-4">
+           <h2 class="current-city">
+            Kyiv
+          </h2>
+        </div>
+        <div class="col-7">
+            <h3>
+              <div class="current-day-time"> 
+              Tuesday 16:00
+            </div> 
+                <div class="current-weather">
+                Partly cloudy
+              </div>
+            </h3>
+         </div>
+        </div>
+     
+      </div>
+      
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

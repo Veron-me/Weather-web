@@ -3,7 +3,7 @@
   <head>
     <title>🌦️ Weather</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
@@ -15,6 +15,70 @@
   </head>
 
   <body>
+    <style>body {
+  color: #5a6275;
+  font-size: 14px;
+  
+}
+h1 {
+  font-size: 124px;
+  text-align: right;
+}
+
+h2 {
+  text-align: end;
+  padding-left: 15px;
+}
+h3 {
+  font-size: 12px;
+}
+img {
+  display: block;
+  text-align: left;
+}
+button {
+  border: none;
+  background-color: #ffffff;
+  color: #007bff;
+  transition: all 200ms ease;
+}
+button:hover {
+  cursor: pointer;
+  color: #0056b3;
+  text-decoration: underline;
+}
+.container {
+  max-width: 800px;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #CED4DA;
+  border-radius: 4px;
+}
+
+.city-weather .col-1,
+.col-3 {
+  padding: 0px;
+}
+
+.weather-5-days .col-3 {
+  padding: 0;
+  height: 32.5px;
+}
+.celected-city .col-7 {
+  padding: 8px 0 0 0;
+}
+.celsius,
+.slash,
+.fahrenheit {
+  display: inline;
+  font-size: 20px;
+  vertical-align: -35px;
+}
+.sign-up{
+  text-align: center;
+  font-size: 10px;
+}
+</style>
     <div class="container">
       
       <form class="search-city col-8" id="search-data">
@@ -144,6 +208,7 @@
       </div>
       
     </div>
+    <div class="sign-up">This project was coded by <a href="mailto:veronika.otrok@gmail.com">Veronika Otrok</a> and is <a href="https://github.com/Veron-me/Weather-web">open-sourced on GitHub</a> and <a href="https://cool-haupia-2006e4.netlify.app">hosted on Netlify</a> </div>
     <script src="index.js"></script>
   </body>
 </html>

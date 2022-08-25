@@ -59,6 +59,12 @@ function showWeather(response) {
   let currentSky = response.data.weather[0].main;
   let sky = document.querySelector(`div.current-weather`);
   sky.innerHTML = `${currentSky}`;
+  let currentWindSpeed = response.data.wind.speed;
+  let windSpeed = document.querySelector(`div.current-wind-speed`);
+  windSpeed.innerHTML = `Wind speed: ${currentWindSpeed}`;
+  let currentHumidity = response.data.main.humidity;
+  let humidity = document.querySelector(`div.current-humidity`);
+  humidity.innerHTML = `Humidity: ${currentHumidity}`;
 }
 
 function currentPos(position) {

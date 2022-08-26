@@ -65,6 +65,32 @@ function showWeather(response) {
   let currentHumidity = response.data.main.humidity;
   let humidity = document.querySelector(`div.current-humidity`);
   humidity.innerHTML = `Humidity: ${currentHumidity}`;
+  //Current weather img chainging - daytime
+  let getDate = new Date();
+  let imgHours = getDate.getHours();
+  if (imgHours > 6 && imgHours < 20) {
+    let changeImg = document.getElementById("currentWeatherImg").src;
+    alert(`${changeImg}`);
+    if (currentSky === `Clear`) {
+      changeImg.src = "img/sun.png";
+    } else if (currentSky === `Clouds`) {
+      alert("fuck");
+      changeImg.src = "img/partly_cloudy.png";
+    } else if (currentSky === `Rain`) {
+      alert("fuck you");
+      changeImg.src = `file:///C:/Users/Otrok/Documents/GitHub/Weather-web/img/rain.png`;
+    } else {
+      changeImg.src = `I have to find a picture((((`;
+    }
+  } else {
+    if (currentSky === "Clear") {
+      document.getElementById("currentWeatherImg").src = `img/moon.png`;
+    } else if (currentSky === "Clouds") {
+      document.getElementById(
+        "currentWeatherImg"
+      ).src = `img/night_cloudy(2).png`;
+    }
+  }
 }
 
 function currentPos(position) {

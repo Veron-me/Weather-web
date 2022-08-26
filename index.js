@@ -92,6 +92,16 @@ function showWeather(response) {
       changeImg.src = `I have to find a picture((((`;
     }
   }
+  //Time change????
+  /*
+  let searchedTimeZone = response.data.timezone;
+  let searchedCodeCountry = response.data.sys.country;
+  alert(`${searchedTimeZone}`);
+  alert(`${getDate}`);
+  let searchedTime = getDate.toLocaleString(`${searchedCodeCountry}`, {
+    timeZone: `${searchedCodeCountry}`,
+  });
+  alert(`${searchedTime}`);*/
 }
 
 function currentPos(position) {

@@ -70,24 +70,31 @@ function showWeather(response) {
   let imgHours = getDate.getHours();
   if (imgHours > 6 && imgHours < 20) {
     if (currentSky === `Clear`) {
-      document.getElementById("currentWeatherImg").src = "img/sun.png";
+      document.getElementById("currentWeatherImg").src =
+        "./Weather-web/img/sun.png";
     } else if (currentSky === `Clouds`) {
       document.getElementById("currentWeatherImg").src =
         "img/partly_cloudy.png";
     } else if (currentSky === `Rain`) {
-      document.getElementById("currentWeatherImg").src = `img/rain.png`;
+      document.getElementById(
+        "currentWeatherImg"
+      ).src = `./Weather-web/img/rain.png`;
     } else {
       document.getElementById("currentWeatherImg").src = `...`;
     }
   } else {
     if (currentSky === "Clear") {
-      document.getElementById("currentWeatherImg").src = `img/moon.png`;
+      document.getElementById(
+        "currentWeatherImg"
+      ).src = `./Weather-web/img/moon.png`;
     } else if (currentSky === "Clouds") {
       document.getElementById(
         "currentWeatherImg"
-      ).src = `img/night_cloudy(2).png`;
+      ).src = `./Weather-web/img/night_cloudy(2).png`;
     } else if (currentSky === `Rain`) {
-      document.getElementById("currentWeatherImg").src = `img/rain.png`;
+      document.getElementById(
+        "currentWeatherImg"
+      ).src = `./Weather-web/img/rain.png`;
     } else {
       changeImg.src = `I have to find a picture((((`;
     }

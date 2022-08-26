@@ -69,18 +69,15 @@ function showWeather(response) {
   let getDate = new Date();
   let imgHours = getDate.getHours();
   if (imgHours > 6 && imgHours < 20) {
-    let changeImg = document.getElementById("currentWeatherImg").src;
-    alert(`${changeImg}`);
     if (currentSky === `Clear`) {
-      changeImg.src = "img/sun.png";
+      document.getElementById("currentWeatherImg").src = "img/sun.png";
     } else if (currentSky === `Clouds`) {
-      alert("fuck");
-      changeImg.src = "img/partly_cloudy.png";
+      document.getElementById("currentWeatherImg").src =
+        "img/partly_cloudy.png";
     } else if (currentSky === `Rain`) {
-      alert("fuck you");
-      changeImg.src = `file:///C:/Users/Otrok/Documents/GitHub/Weather-web/img/rain.png`;
+      document.getElementById("currentWeatherImg").src = `img/rain.png`;
     } else {
-      changeImg.src = `I have to find a picture((((`;
+      document.getElementById("currentWeatherImg").src = `...`;
     }
   } else {
     if (currentSky === "Clear") {
@@ -89,6 +86,10 @@ function showWeather(response) {
       document.getElementById(
         "currentWeatherImg"
       ).src = `img/night_cloudy(2).png`;
+    } else if (currentSky === `Rain`) {
+      document.getElementById("currentWeatherImg").src = `img/rain.png`;
+    } else {
+      changeImg.src = `I have to find a picture((((`;
     }
   }
 }

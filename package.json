@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
+  "homepage": "https://cool-haupia-2006e4.netlify.app",
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html"

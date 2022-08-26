@@ -70,15 +70,16 @@ function showWeather(response) {
   let imgHours = getDate.getHours();
   if (imgHours > 6 && imgHours < 20) {
     if (currentSky === `Clear`) {
+      // /Veron-me/Weather-web/blob/main/img/cloudy_windy.png?raw=true
       document.getElementById("currentWeatherImg").src =
-        "./Weather-web/img/sun.png";
+        "/Veron-me/Weather-web/blob/main/img/sun.png";
     } else if (currentSky === `Clouds`) {
       document.getElementById("currentWeatherImg").src =
-        "img/partly_cloudy.png";
+        "/Veron-me/Weather-web/blob/main/img/partly_cloudy.png";
     } else if (currentSky === `Rain`) {
       document.getElementById(
         "currentWeatherImg"
-      ).src = `./Weather-web/img/rain.png`;
+      ).src = `/Veron-me/Weather-web/blob/main/img/rain.png`;
     } else {
       document.getElementById("currentWeatherImg").src = `...`;
     }
@@ -86,15 +87,15 @@ function showWeather(response) {
     if (currentSky === "Clear") {
       document.getElementById(
         "currentWeatherImg"
-      ).src = `./Weather-web/img/moon.png`;
+      ).src = `/Veron-me/Weather-web/blob/main/img/moon.png`;
     } else if (currentSky === "Clouds") {
       document.getElementById(
         "currentWeatherImg"
-      ).src = `./Weather-web/img/night_cloudy(2).png`;
+      ).src = `/Veron-me/Weather-web/blob/main/img/night_cloudy(2).png`;
     } else if (currentSky === `Rain`) {
       document.getElementById(
         "currentWeatherImg"
-      ).src = `./Weather-web/img/rain.png`;
+      ).src = `/Veron-me/Weather-web/blob/main/img/rain.png`;
     } else {
       changeImg.src = `I have to find a picture((((`;
     }

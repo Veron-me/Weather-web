@@ -72,14 +72,14 @@ function showWeather(response) {
     if (currentSky === `Clear`) {
       // /Veron-me/Weather-web/blob/main/img/cloudy_windy.png?raw=true
       document.getElementById("currentWeatherImg").src =
-        "https://github.com/Veron-me/Weather-web/blob/main/img/sun.png";
+        "https://github.com/Veron-me/Weather-web/blob/main/img/sun.png?raw=true";
     } else if (currentSky === `Clouds`) {
       document.getElementById("currentWeatherImg").src =
-        "https://github.com/Veron-me/Weather-web/blob/main/img/partly_cloudy.png";
+        "https://github.com/Veron-me/Weather-web/blob/main/img/partly_cloudy.png?raw=true";
     } else if (currentSky === `Rain`) {
       document.getElementById(
         "currentWeatherImg"
-      ).src = `https://github.com/Veron-me/Weather-web/blob/main/img/rain.png`;
+      ).src = `https://github.com/Veron-me/Weather-web/blob/main/img/rain.png?raw=true`;
     } else {
       document.getElementById("currentWeatherImg").src = `...`;
     }

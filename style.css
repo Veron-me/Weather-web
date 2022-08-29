@@ -42,12 +42,12 @@ button:hover {
   padding: 0px;
 }
 
-.weather-5-days .col-3 {
+.weather-5-days .col-3,
+.col-5 {
   padding: 0;
   height: 32.5px;
 }
-.celected-city .col-2,
-.col-5 {
+.celected-city .col-2 {
   padding: 8px 0 0 0;
 }
 .celsius,
